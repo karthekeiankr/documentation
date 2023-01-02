@@ -18,11 +18,9 @@
 
 .header-nav {
     display: flex;
-    /* align-items: center; */
 }
 
 .left-div {
-    /* border: 1px solid white; */
     display: flex;
     flex-basis: 50%;
     align-items: center;
@@ -31,7 +29,6 @@
 }
 
 .right-div {
-    /* border: 1px solid yellow; */
     display: flex;
     flex-basis: 50%;
     align-items: center;
@@ -52,7 +49,6 @@
     font-family: 'Lato', sans-serif;
     font-weight: bolder;
     opacity: 0.5;
-    /* border: 1px solid white; */
 }
 
 .header .header-nav div.left-div ul li a:hover {
@@ -66,10 +62,7 @@
 
 .header .header-nav div.left-div ul li {
     display: inline-block;
-    /* border: 1px solid pink;  */
     padding: 5px;
-
-
 }
 
 .header .header-nav div.right-div ul li {
@@ -77,7 +70,6 @@
     display: inline;
     list-style: none;
     padding: 5px;
-
 }
 
 .header .header-nav div.right-div ul li.fa-lg {
@@ -109,4 +101,140 @@
 .sidebar {
     /* background-color: green; */
     overflow: scroll;
+}
+.main-content {
+    /* background-color: red; */
+    overflow: scroll;
+}
+
+/* CSS of Side Bar Starts Here */
+.js-doc-heading {
+    font-family: 'Lato', sans-serif;
+    padding: 5px;
+    font-size: 1.3em;
+    font-weight: 900;
+    border-bottom: 1px solid rgb(226, 219, 219);
+    box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    text-align: center;
+}
+
+.sidebar ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    padding: 5px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: capitalize;
+
+}
+
+.sidebar ul li {
+    text-align: center;
+    border-radius: 5px;
+    margin: 7px;
+    box-shadow: inset 1px 0px 5px 0px rgba(50, 50, 50, 0.75);
+
+}
+
+.sidebar ul li:hover {
+    box-shadow: -1px -1px 5px 0px rgba(50, 50, 50, 0.75);
+    transform: scale(1.05);
+}
+
+/* CSS of Main Content Starts Here */
+.main-section>header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    font-weight: 800;
+    text-align: center;
+    border-bottom: 1px solid #EAF0F1;
+    text-transform: capitalize;
+}
+
+#main-doc section {
+    border: 1px solid transparent;
+    padding: 10px;
+    margin: 5px 5px;
+    border-radius: 10px;
+    box-shadow: -1px -1px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+#main-doc section article {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25px;
+    word-spacing: 2px;
+    text-align: left;
+}
+
+#main-doc section article li {
+    list-style: none;
+}
+
+#main-doc section article code {
+    background-color: #EAF0F1;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 1px;
+    color: black;
+
+}
+
+@media (max-width:768px) {
+    .container {
+        grid-template-rows: 10vh 30vh 60vh;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width:320px) {
+    .header .header-nav div.left-div ul li a {
+        display: none;
+    }
+
+    .header .header-nav div.right-div ul li {
+        display: none;
+    }
+
+    .logo {
+        margin-top: 8px;
+    }
+
+    .sidebar {
+        border: 1px solid transparent;
+        border-radius: 20px;
+        margin: 10px;
+        box-shadow: -1px -1px 5px 0px rgba(50, 50, 50, 0.75);
+    }
+}
+
+@media (max-width:425px) {
+    .header .header-nav div.left-div ul li a {
+        display: none;
+    }
+
+    .header .header-nav div.right-div ul li {
+        display: none;
+    }
+
+    .logo {
+        margin-top: 8px;
+    }
+
+    .sidebar {
+        border: 1px solid transparent;
+        border-radius: 20px;
+        margin: 10px;
+        box-shadow: -1px -1px 5px 0px rgba(50, 50, 50, 0.75);
+    }
+
+}
+
+@media (max-width:768px) {
+    .header .header-nav div.left-div ul li a {
+        font-weight: 400;
+    }
 }
